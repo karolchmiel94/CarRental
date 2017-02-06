@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wypozyczalnia.java.fx.controller.ShowCarsController">
+   <children>
+      <Button layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#backButton" text="Wróć" />
+      <TableView id="carsTable" fx:id="carsTable" layoutX="104.0" layoutY="63.0" prefHeight="317.0" prefWidth="411.0">
+        <columns>
+          <TableColumn id="nameColumn" fx:id="nameColumn" prefWidth="102.0" text="Marka" />
+          <TableColumn id="surnameColumn" fx:id="surnameColumn" prefWidth="101.0" text="Model" />
+          <TableColumn id="prodYearColumn" fx:id="prodYearColumn" prefWidth="83.0" text="Rok produkcji" />
+          <TableColumn id="regNumberColumn" fx:id="regNumberColumn" prefWidth="123.0" text="Numer rejestracyjny" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="77.0" mnemonicParsing="false" onAction="#downloadData" text="Pobierz dane" />
+      <Label layoutX="239.0" layoutY="27.0" text="Lista samochodów">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

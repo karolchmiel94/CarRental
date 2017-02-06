@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wypozyczalnia.java.fx.controller.AddCarController">
+   <children>
+      <Label layoutX="222.0" layoutY="37.0" text="Dodawanie samochodu">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="94.0" text="Marka: ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="192.0" text="Model: ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="328.0" layoutY="94.0" text="Rok produkcji: ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="328.0" layoutY="192.0" text="Numer rejestracyjny: ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField id="carBrand" fx:id="carBrand" layoutX="51.0" layoutY="127.0" onAction="#addCar" />
+      <TextField id="carModel" fx:id="carModel" layoutX="51.0" layoutY="227.0" onAction="#addCar" />
+      <TextField id="carProductionYear" fx:id="carProductionYear" layoutX="333.0" layoutY="127.0" onAction="#addCar" />
+      <TextField id="carRegistrationNumber" fx:id="carRegistrationNumber" layoutX="333.0" layoutY="227.0" onAction="#addCar" />
+      <Button layoutX="348.0" layoutY="327.0" mnemonicParsing="false" onAction="#addCar" text="Dodaj" />
+      <Button layoutX="204.0" layoutY="327.0" mnemonicParsing="false" onAction="#backButton" text="Wróć" />
+   </children>
+</Pane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wypozyczalnia.java.fx.controller.MenuController">
+   <children>
+      <TextField id="carsText" alignment="CENTER" editable="false" focusTraversable="false" layoutX="13.0" layoutY="92.0" text="Samochody">
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor></TextField>
+      <TextField id="clientsText" alignment="CENTER" editable="false" layoutX="226.0" layoutY="92.0" text="Klienci">
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor></TextField>
+      <TextField id="rentsText" alignment="CENTER" editable="false" layoutX="436.0" layoutY="92.0" text="Wypożyczenia">
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor></TextField>
+      <Button id="addCar" layoutX="35.0" layoutY="136.0" mnemonicParsing="false" onAction="#add" text="Dodaj samochód" />
+      <Button id="showCars" layoutX="31.0" layoutY="188.0" mnemonicParsing="false" onAction="#add" text="Pokaż samochody" />
+      <Button id="addClient" layoutX="257.0" layoutY="136.0" mnemonicParsing="false" onAction="#add" text="Dodaj klienta" />
+      <Button id="addRent" layoutX="442.0" layoutY="136.0" mnemonicParsing="false" onAction="#add" text="Rejestruj wypożyczenie" />
+      <Button id="showClients" layoutX="252.0" layoutY="188.0" mnemonicParsing="false" onAction="#add" text="Pokaż klientów" />
+      <Button id="showRents" layoutX="449.0" layoutY="188.0" mnemonicParsing="false" onAction="#add" text="Pokaż wypożyczenia" />
+      <Button id="exitButton" layoutX="528.0" layoutY="361.0" mnemonicParsing="false" onAction="#exit" text="Zamknij" />
+   </children>
+</Pane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wypozyczalnia.java.fx.controller.ShowRentsController">
+   <children>
+      <TableView id="rentsTable" fx:id="rentsTable" layoutX="58.0" layoutY="72.0" prefHeight="256.0" prefWidth="519.0">
+        <columns>
+          <TableColumn id="nameColumn" fx:id="nameColumn" prefWidth="94.0" text="Imię" />
+          <TableColumn id="surnameColumn" fx:id="surnameColumn" prefWidth="108.0" text="Nazwisko" />
+            <TableColumn id="brandColumn" fx:id="brandColumn" prefWidth="112.0" text="Marka" />
+            <TableColumn id="modelColumn" fx:id="modelColumn" prefWidth="96.0" text="Model" />
+            <TableColumn id="regNumberColumn" fx:id="regNumberColumn" prefWidth="106.0" text="Nr rejestracyjny" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#backToMenu" text="Wróć" />
+      <Button layoutX="18.0" layoutY="37.0" mnemonicParsing="false" onAction="#downloadData" text="Pobierz dane" />
+      <Label layoutX="255.0" layoutY="29.0" text="Lista wypożyczeń">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
